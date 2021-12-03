@@ -6,7 +6,7 @@ import sys
 hat = SenseHat()
 
 # variabels for on and off pixel color
-on = (0, 10, 0)
+on = (0, 255, 0)
 off = (0, 0, 0)
 
 ShowClock = True # Boolean that determine if clock is showing
