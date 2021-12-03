@@ -19,25 +19,7 @@ To set up the service first run following command to path to the system folder
 after that create the service by typing the following command
 * sudo nano clock_script.service
 
-After that copy this piece into the script
-
-[Unit]
-
-Description= Binary clock
-
-After=multi-user.target
-
-[Service]
-
-Type=simple
-
-ExecStart=/usr/bin/python /home/pi/Clock.py
-
-Restart=on-abort
-
-[Install]
-
-WantedBy=multi-user.target
+After that copy the context of Service Setup into clock_script.service
 
 # Closing and starting service
 
