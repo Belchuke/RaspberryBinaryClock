@@ -24,11 +24,11 @@ For setting up as service run following command
 # Closing and starting service
 
 To check the status of the service
-* sudo systemctl status clock_script.service
+* sudo systemctl status clock.service
 
 To start the service
-* sudo systemctl start clock_script.service
+* sudo systemctl start clock.service
 
 To stop the service
-* sudo systemctl stop clock_script.service
+* sudo systemctl stop clock.service
 
