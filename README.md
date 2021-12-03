@@ -22,15 +22,21 @@ after that create the service by typing the following command
 After that copy this piece into the script
 
 [Unit]
+
 Description= Binary clock
+
 After=multi-user.target
 
 [Service]
+
 Type=simple
+
 ExecStart=/usr/bin/python /home/pi/Clock.py
+
 Restart=on-abort
 
 [Install]
+
 WantedBy=multi-user.target
 
 # Closing and starting service
