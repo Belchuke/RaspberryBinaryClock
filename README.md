@@ -1,26 +1,32 @@
-# RaspberryBinaryClock
+# RaspberryBinaryClock Description
 Raspberry Pie Binary Clock School Task
 
 A Binary clock project for sensehat for raspberry pie made in python. 
-
 Simply download the repository to the pie. 
 
+# Joystick actions
+Pressing the joystick on the sence hat brings two options
+- Pushing up or down will change the clock to switch between vertical or horizontal display of the clock
+- Pushing Left or right wil change the clock between 12 hour showing and 24 hour showing.
+
+
 # Setting up as service
+* sudo nano hello.service
 
-go to the init.d file on the raspberry pie via SSH 
-- cd /etc/init.d
+To set up the service first run following command to path to the system folder
+* cd /lib/systemd/system/
 
-after that create a new python script file.
-- sudo nano script.py
-and copy the content of the script file into that
+after that create the service by typing the following command
+* sudo nano clock_script.service
 
-in the top add lines from service data to the top of the file.
+# Closing and starting service
 
-After that save the context of the script by pressing ctrl+x and save the file.
+To check the status of the service
+* sudo systemctl status clock_script.service
 
-run the following commands after
--sudo chmod +x script.py
--sudo update-rc.d script.py defaults
+To start the service
+* sudo systemctl start clock_script.service
 
-and after that reboot the pie to ensure it works
-- sudo reboot
+To stop the service
+* sudo systemctl stop clock_script.service
+
