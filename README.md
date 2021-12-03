@@ -3,6 +3,7 @@ Raspberry Pie Binary Clock School Task
 
 A Binary clock project for sensehat for raspberry pie made in python. 
 
+You can use the joysticks for various actions descripted in the joystick Actions descriptions
 
 # Joystick actions
 Pressing the joystick on the sence hat brings two options
