@@ -17,22 +17,8 @@ after download the repository
 * git clone https://github.com/Belchuke/RaspberryBinaryClock.git
 
 # Setting up as service
-* sudo nano hello.service
-
-To set up the service first run following command to path to the system folder
-* cd /lib/systemd/system/
-
-after that create the service by typing the following command
-* sudo nano clock_script.service
-
-After that copy the context of Service Setup into clock_script.service.
-
-After that type the following commands in the bash terminal
-* sudo chmod 644 /lib/systemd/system/clock_script.service
-* chmod +x /home/pi/script.py
-* sudo systemctl daemon-reload
-* sudo systemctl enable clock_script.service
-* sudo systemctl start clock_script.service
+For setting up as service run following command
+* sudo sh RaspberryBinaryClock/setup.sh
 
 # Closing and starting service
 
